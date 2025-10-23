@@ -31,7 +31,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             </div>
             <div>
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary leading-tight">
-                एस.पी. चौधरी
+                Mr. Pankaj Chaudhary
               </h1>
               <p className="text-xs text-muted-foreground hidden sm:block">डिजिटल सेवा केंद्र</p>
             </div>

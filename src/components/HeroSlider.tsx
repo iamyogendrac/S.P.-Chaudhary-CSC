@@ -53,35 +53,46 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
   const Icon = slides[currentSlide].icon;
 
   return (
-    <section id="home" className="relative overflow-hidden bg-gradient-hero min-h-[600px] flex items-center">
+    <section id="home" className="relative overflow-hidden bg-gradient-hero min-h-[650px] sm:min-h-[700px] flex items-center">
+      {/* Animated Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent animate-gradient-slow"></div>
+      </div>
+      
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-10"
+        className="absolute inset-0 bg-cover bg-center opacity-15 transition-opacity duration-1000"
         style={{ backgroundImage: `url(${heroBanner})` }}
       />
       
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full mb-6 animate-fade-in">
-            <Icon className="w-5 h-5 text-accent" />
-            <span className="text-sm font-semibold text-foreground">
-              बस्ती, यू.पी. में आपका डिजिटल सेवा पार्टनर
+          {/* Badge with Government Style */}
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-6 py-3 rounded-full mb-6 shadow-lg border border-accent/20 animate-fade-in-left">
+            <Icon className="w-6 h-6 text-accent animate-pulse-glow" />
+            <span className="text-sm sm:text-base font-bold text-foreground">
+              🇮🇳 बस्ती, यू.पी. में आपका डिजिटल सेवा पार्टनर
             </span>
           </div>
 
-          {/* Main Content */}
-          <div className="animate-scale-in">
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
+          {/* Main Content with Enhanced Animation */}
+          <div className="animate-scale-in" key={currentSlide}>
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-2xl">
               {slides[currentSlide].title}
             </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white/90 mb-6">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white/95 mb-6 drop-shadow-lg">
               {slides[currentSlide].subtitle}
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/80 mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md leading-relaxed">
               {slides[currentSlide].description}
             </p>
+            
+            {/* Service Provider Name */}
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-xl mb-6 border border-white/30">
+              <span className="text-white/90 text-sm">संचालक:</span>
+              <span className="text-white font-bold text-base sm:text-lg">Mr. Pankaj Chaudhary</span>
+            </div>
           </div>
 
           {/* CTA Buttons */}

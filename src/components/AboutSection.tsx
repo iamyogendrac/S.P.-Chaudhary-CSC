@@ -15,7 +15,7 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
               हमारे बारे में
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-              एस.पी. चौधरी डिजिटल सेवा केंद्र - बस्ती का विश्वसनीय जन सेवा केंद्र
+              Mr. Pankaj Chaudhary डिजिटल सेवा केंद्र - बस्ती का विश्वसनीय जन सेवा केंद्र
             </p>
           </div>
 
@@ -78,11 +78,12 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                     <div>
                       <p className="font-semibold text-card-foreground mb-1">फोन नंबर</p>
                       <a 
-                        href="tel:8957449403" 
+                        href="tel:8557449403" 
                         className="text-lg font-bold text-accent hover:text-accent-light transition-colors"
                       >
-                        +91 8957449403
+                        +91 8557449403
                       </a>
+                      <p className="text-sm text-muted-foreground mt-1">Mr. Pankaj Chaudhary</p>
                     </div>
                   </div>
 

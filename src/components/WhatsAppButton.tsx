@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 const WhatsAppButton = () => {
   const handleClick = () => {
     window.open(
-      "https://wa.me/918957449403?text=नमस्ते,%20मुझे%20आपकी%20डिजिटल%20सेवाओं%20के%20बारे%20में%20जानकारी%20चाहिए।",
+      "https://wa.me/918557449403?text=नमस्ते,%20मुझे%20आपकी%20डिजिटल%20सेवाओं%20के%20बारे%20में%20जानकारी%20चाहिए।",
       "_blank"
     );
   };

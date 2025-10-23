@@ -23,7 +23,7 @@ const Footer = () => {
               <img src={digitalIndiaLogo} alt="Digital India" className="h-12 w-12 object-contain" />
             </div>
             <h3 className="text-xl font-bold">
-              एस.पी. चौधरी<br />डिजिटल सेवा केंद्र
+              Mr. Pankaj Chaudhary<br />डिजिटल सेवा केंद्र
             </h3>
             <p className="text-primary-foreground/80 text-sm">
               बस्ती का विश्वसनीय जन सेवा केंद्र। सभी डिजिटल और सरकारी सेवाएं एक छत के नीचे।
@@ -96,10 +96,10 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
                 <a 
-                  href="tel:8957449403"
+                  href="tel:8557449403"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  +91 8957449403
+                  +91 8557449403
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
             <p>
-              © {currentYear} एस.पी. चौधरी डिजिटल सेवा केंद्र। सभी अधिकार सुरक्षित।
+              © {currentYear} Mr. Pankaj Chaudhary डिजिटल सेवा केंद्र। सभी अधिकार सुरक्षित।
             </p>
             <p className="flex items-center gap-2">
               <span>समर्थित:</span>

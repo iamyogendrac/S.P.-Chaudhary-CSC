@@ -6,14 +6,22 @@ import ServicesSection from "@/components/ServicesSection";
 import AepsSection from "@/components/AepsSection";
 import AboutSection from "@/components/AboutSection";
 import ContactModal from "@/components/ContactModal";
+import ServiceBookingModal from "@/components/ServiceBookingModal";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isServiceBookingOpen, setIsServiceBookingOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState<string>("");
 
   const handleBookingClick = () => {
     setIsContactModalOpen(true);
+  };
+
+  const handleServiceBooking = (serviceName: string) => {
+    setSelectedService(serviceName);
+    setIsServiceBookingOpen(true);
   };
 
   return (
@@ -23,8 +31,8 @@ const Index = () => {
       <main>
         <HeroSlider onBookingClick={handleBookingClick} />
         <TrustHighlights />
-        <ServicesSection />
-        <AepsSection onBookingClick={handleBookingClick} />
+        <ServicesSection onServiceClick={handleServiceBooking} />
+        <AepsSection onBookingClick={() => handleServiceBooking("AEPS बैंकिंग सेवा")} />
         <AboutSection onBookingClick={handleBookingClick} />
       </main>
 
@@ -34,6 +42,12 @@ const Index = () => {
       <ContactModal 
         isOpen={isContactModalOpen} 
         onClose={() => setIsContactModalOpen(false)} 
+      />
+      
+      <ServiceBookingModal
+        isOpen={isServiceBookingOpen}
+        onClose={() => setIsServiceBookingOpen(false)}
+        serviceName={selectedService}
       />
     </div>
   );
