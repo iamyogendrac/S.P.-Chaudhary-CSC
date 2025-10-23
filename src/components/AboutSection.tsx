@@ -14,7 +14,8 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               हमारे बारे में
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              Mr. Pankaj Chaudhary डिजिटल सेवा केंद्र - बस्ती का विश्वसनीय जन सेवा केंद्र
             </p>
           </div>
 
@@ -93,8 +94,8 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                     <div>
                       <p className="font-semibold text-card-foreground mb-1">समय</p>
                       <p className="text-muted-foreground">
-                        सोमवार - रविवार: 9:00 AM - 7:00 PM<br />
-                        
+                        सोमवार - शनिवार: 9:00 AM - 7:00 PM<br />
+                        रविवार: बंद
                       </p>
                     </div>
                   </div>
@@ -114,7 +115,7 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                   <div className="text-center p-6">
                     <MapPin className="w-12 h-12 text-primary mx-auto mb-3" />
                     <p className="text-muted-foreground font-medium">
-                      चिलमा बाजार, बस्ती<br />
+                      चिल्मा बाजार, बस्ती<br />
                       SBI के पास
                     </p>
                   </div>
