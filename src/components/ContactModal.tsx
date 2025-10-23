@@ -66,7 +66,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
               <div>
                 <p className="font-semibold text-sm">पता</p>
                 <p className="text-sm text-muted-foreground">
-                  चिल्मा बाजार, बस्ती<br />
+                  चिलमा बाजार, बस्ती<br />
                   SBI के पास, उत्तर प्रदेश - 272001
                 </p>
               </div>
@@ -86,7 +86,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
               <div>
                 <p className="font-semibold text-sm">समय</p>
                 <p className="text-sm text-muted-foreground">
-                  सोम - शनि: 9:00 AM - 7:00 PM
+                  सोम - रविवार: 9:00 AM - 7:00 PM
                 </p>
               </div>
             </div>
