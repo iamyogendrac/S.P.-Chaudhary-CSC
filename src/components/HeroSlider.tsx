@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, CreditCard, FileText, MapPin, Award, Users, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBanner from "@/assets/hero-banner.jpg";
-import cscLogo from "@/assets/csc-logo.png";
-import digitalIndiaLogo from "@/assets/digital-india-logo.png";
+import cscLogo from "@/assets/csc-logo-new.png";
+import digitalIndiaLogo from "@/assets/csc-digital-india-logo.png";
+import sanchalakImage from "@/assets/pankaj-chaudhary.jpg";
 
 interface HeroSliderProps {
   onBookingClick: () => void;
@@ -78,14 +79,8 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Government Logos Badge */}
           <div className="inline-flex items-center gap-4 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl mb-6 shadow-2xl border-2 border-orange-400 animate-fade-in-left">
-            <img src={cscLogo} alt="CSC" className="h-12 w-12 object-contain animate-pulse-glow" />
-            <img src={digitalIndiaLogo} alt="Digital India" className="h-12 w-12 object-contain animate-pulse-glow" />
-            <div className="text-left">
-              <p className="text-sm sm:text-base font-bold text-orange-600">
-                🇮🇳 Common Service Centre
-              </p>
-              <p className="text-xs text-blue-600 font-semibold">Digital India Initiative</p>
-            </div>
+            <img src={cscLogo} alt="CSC Common Service Centre" className="h-16 w-auto object-contain animate-pulse-glow" />
+            <img src={digitalIndiaLogo} alt="CSC Digital India" className="h-16 w-auto object-contain animate-pulse-glow" />
           </div>
 
           {/* Main Content with Enhanced Animation */}
@@ -100,11 +95,18 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
               {slides[currentSlide].description}
             </p>
             
-            {/* Service Provider Info */}
-            <div className="inline-flex flex-col gap-2 bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl mb-6 border-2 border-orange-400 shadow-2xl">
-              <span className="text-orange-600 text-sm font-bold">सेवा प्रदाता</span>
-              <span className="text-blue-700 font-bold text-lg sm:text-xl">Pankaj Chaudhary</span>
-              <span className="text-green-600 text-xs font-semibold">S.P. Chaudhary Digital Service Center</span>
+            {/* Sanchalak Info with Image */}
+            <div className="inline-flex items-center gap-4 bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl mb-6 border-2 border-orange-400 shadow-2xl">
+              <img 
+                src={sanchalakImage} 
+                alt="Pankaj Chaudhary - संचालक" 
+                className="h-20 w-20 rounded-full object-cover border-4 border-orange-500 shadow-lg"
+              />
+              <div className="text-left">
+                <span className="text-orange-600 text-sm font-bold block">संचालक (Operator)</span>
+                <span className="text-blue-700 font-bold text-lg sm:text-xl block">Pankaj Chaudhary</span>
+                <span className="text-green-600 text-xs font-semibold block">S.P. Chaudhary Digital Service Center</span>
+              </div>
             </div>
           </div>
 
