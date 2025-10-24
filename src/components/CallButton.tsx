@@ -2,7 +2,7 @@ import { Phone } from "lucide-react";
 
 const CallButton = () => {
   const handleClick = () => {
-    window.location.href = "tel:+918557449403";
+    window.location.href = "tel:+918957449403";
   };
 
   return (
