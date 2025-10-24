@@ -9,6 +9,7 @@ import ContactModal from "@/components/ContactModal";
 import ServiceBookingModal from "@/components/ServiceBookingModal";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CallButton from "@/components/CallButton";
 
 const Index = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -38,6 +39,7 @@ const Index = () => {
 
       <Footer />
       <WhatsAppButton />
+      <CallButton />
       
       <ContactModal 
         isOpen={isContactModalOpen} 

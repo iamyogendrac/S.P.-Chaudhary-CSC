@@ -5,6 +5,8 @@ import heroBanner from "@/assets/hero-banner.jpg";
 import cscLogo from "@/assets/csc-logo-new.png";
 import digitalIndiaLogo from "@/assets/csc-digital-india-logo.png";
 import sanchalakImage from "@/assets/pankaj-chaudhary.jpg";
+import mantraDevice from "@/assets/mantra-device.png";
+import bankLogos from "@/assets/bank-logos-strip.png";
 
 interface HeroSliderProps {
   onBookingClick: () => void;
@@ -34,6 +36,12 @@ const slides = [
     subtitle: "बस्ती में आपका विश्वसनीय पार्टनर",
     description: "State Bank of India के पास, Chilma Bazar, Basti में स्थित। सोमवार से रविवार - सुबह 9 से शाम 7 बजे तक।",
     icon: Users,
+  },
+  {
+    title: "Mantra AEPS Device - सुरक्षित बायोमेट्रिक सिस्टम",
+    subtitle: "आधार सक्षम भुगतान प्रणाली",
+    description: "प्रमाणित Mantra Device से सुरक्षित फिंगरप्रिंट स्कैनिंग - सरकार द्वारा अनुमोदित तकनीक।",
+    icon: Award,
   },
 ];
 
@@ -83,8 +91,18 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
             <img src={digitalIndiaLogo} alt="CSC Digital India" className="h-16 w-auto object-contain animate-pulse-glow" />
           </div>
 
+          {/* Bank Logos Strip */}
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-6 py-3 rounded-2xl mb-6 shadow-xl border border-blue-300">
+            <img src={bankLogos} alt="SBI, BOB, PNB, Aadhaar Enabled" className="h-12 w-auto object-contain" />
+          </div>
+
           {/* Main Content with Enhanced Animation */}
           <div className="animate-scale-in" key={currentSlide}>
+            {currentSlide === 4 && (
+              <div className="mb-6 flex justify-center">
+                <img src={mantraDevice} alt="Mantra AEPS Device" className="h-32 w-auto object-contain rounded-lg shadow-2xl border-4 border-white/30" />
+              </div>
+            )}
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-2xl">
               {slides[currentSlide].title}
             </h1>
