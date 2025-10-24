@@ -15,7 +15,7 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
               हमारे बारे में
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Mr. Pankaj Chaudhary डिजिटल सेवा केंद्र - बस्ती का विश्वसनीय जन सेवा केंद्र
+              S.P. Chaudhary Digital Service Center - बस्ती का विश्वसनीय जन सेवा केंद्र
             </p>
           </div>
 
@@ -64,9 +64,9 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                     <div>
                       <p className="font-semibold text-card-foreground mb-1">पता</p>
                       <p className="text-muted-foreground">
-                        चिल्मा बाजार, बस्ती<br />
-                        स्टेट बैंक ऑफ इंडिया के पास<br />
-                        उत्तर प्रदेश - 272001
+                        Near State Bank of India<br />
+                        Chilma Bazar, Basti<br />
+                        Uttar Pradesh - 272001
                       </p>
                     </div>
                   </div>
@@ -94,8 +94,9 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                     <div>
                       <p className="font-semibold text-card-foreground mb-1">समय</p>
                       <p className="text-muted-foreground">
-                        सोमवार - शनिवार: 9:00 AM - 7:00 PM<br />
-                        रविवार: बंद
+                        सोमवार से रविवार<br />
+                        सुबह 9:00 - शाम 7:00<br />
+                        <span className="text-accent font-semibold">बिना किसी बंद दिन के</span>
                       </p>
                     </div>
                   </div>
@@ -115,8 +116,8 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                   <div className="text-center p-6">
                     <MapPin className="w-12 h-12 text-primary mx-auto mb-3" />
                     <p className="text-muted-foreground font-medium">
-                      चिल्मा बाजार, बस्ती<br />
-                      SBI के पास
+                      Near State Bank of India<br />
+                      Chilma Bazar, Basti
                     </p>
                   </div>
                 </div>

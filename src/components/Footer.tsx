@@ -23,10 +23,11 @@ const Footer = () => {
               <img src={digitalIndiaLogo} alt="Digital India" className="h-12 w-12 object-contain" />
             </div>
             <h3 className="text-xl font-bold">
-              Mr. Pankaj Chaudhary<br />डिजिटल सेवा केंद्र
+              S.P. Chaudhary<br />Digital Service Center
             </h3>
             <p className="text-primary-foreground/80 text-sm">
-              बस्ती का विश्वसनीय जन सेवा केंद्र। सभी डिजिटल और सरकारी सेवाएं एक छत के नीचे।
+              बस्ती का विश्वसनीय जन सेवा केंद्र। सभी डिजिटल और सरकारी सेवाएं एक छत के नीचे।<br />
+              सेवा प्रदाता: Pankaj Chaudhary
             </p>
           </div>
 
@@ -89,8 +90,8 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  चिल्मा बाजार, बस्ती<br />
-                  SBI के पास, UP - 272001
+                  Near State Bank of India<br />
+                  Chilma Bazar, Basti, UP - 272001
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -105,8 +106,8 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Clock className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  सोम - शनि: 9 AM - 7 PM<br />
-                  रविवार: बंद
+                  सोमवार से रविवार<br />
+                  सुबह 9:00 - शाम 7:00 (बिना बंद दिन)
                 </span>
               </li>
             </ul>
@@ -117,7 +118,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
             <p>
-              © {currentYear} Mr. Pankaj Chaudhary डिजिटल सेवा केंद्र। सभी अधिकार सुरक्षित।
+              © {currentYear} S.P. Chaudhary Digital Service Center। सभी अधिकार सुरक्षित।
             </p>
             <p className="flex items-center gap-2">
               <span>समर्थित:</span>

@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, CreditCard, FileText, MapPin } from "lucide-react";
+import { ChevronLeft, ChevronRight, CreditCard, FileText, MapPin, Award, Users, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBanner from "@/assets/hero-banner.jpg";
+import cscLogo from "@/assets/csc-logo.png";
+import digitalIndiaLogo from "@/assets/digital-india-logo.png";
 
 interface HeroSliderProps {
   onBookingClick: () => void;
@@ -9,22 +11,28 @@ interface HeroSliderProps {
 
 const slides = [
   {
-    title: "तेज़, भरोसेमंद और झंझट-मुक्त",
-    subtitle: "डिजिटल और सरकारी सेवाएँ",
-    description: "आधार और पैन सेवाओं से लेकर यूटिलिटी भुगतान और जटिल सरकारी फॉर्म तक, हम आपके विश्वसनीय स्थानीय विशेषज्ञ हैं।",
-    icon: FileText,
+    title: "CSC - जन सेवा केंद्र",
+    subtitle: "डिजिटल इंडिया की पहल",
+    description: "सरकार द्वारा मान्यता प्राप्त कॉमन सर्विस सेंटर - सभी सरकारी और डिजिटल सेवाएं एक छत के नीचे।",
+    icon: Award,
   },
   {
-    title: "एटीएम सेवा (आधार सक्षम)",
-    subtitle: "AEPS - तेज़ नकद निकासी",
-    description: "अपना Aadhaar Card लाइए और पैसा निकालिए। तेज़, सुरक्षित और भरोसेमंद बैंकिंग सेवा आपके पास।",
+    title: "प्रधानमंत्री डिजिटल इंडिया मिशन",
+    subtitle: "आधार, पैन और सभी सरकारी योजनाएं",
+    description: "PM किसान, आयुष्मान भारत, AEPS बैंकिंग - सभी योजनाओं का लाभ यहाँ पाएं।",
+    icon: Building2,
+  },
+  {
+    title: "आधार सक्षम बैंकिंग (AEPS)",
+    subtitle: "बिना ATM कार्ड के पैसे निकालें",
+    description: "सिर्फ आधार कार्ड से नकद निकासी, बैलेंस चेक और मिनी स्टेटमेंट - सुरक्षित और तेज़।",
     icon: CreditCard,
   },
   {
-    title: "स्थानीय और भरोसेमंद",
-    subtitle: "बस्ती में आपका डिजिटल पार्टनर",
-    description: "स्टेट बैंक ऑफ इंडिया चिल्मा बाजार बस्ती के पास सुविधाजनक स्थान पर स्थित।",
-    icon: MapPin,
+    title: "स्थानीय और भरोसेमंद सेवा",
+    subtitle: "बस्ती में आपका विश्वसनीय पार्टनर",
+    description: "State Bank of India के पास, Chilma Bazar, Basti में स्थित। सोमवार से रविवार - सुबह 9 से शाम 7 बजे तक।",
+    icon: Users,
   },
 ];
 
@@ -53,27 +61,31 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
   const Icon = slides[currentSlide].icon;
 
   return (
-    <section id="home" className="relative overflow-hidden bg-gradient-hero min-h-[650px] sm:min-h-[700px] flex items-center">
+    <section id="home" className="relative overflow-hidden bg-gradient-to-br from-orange-600 via-blue-600 to-orange-500 min-h-[650px] sm:min-h-[700px] flex items-center">
       {/* Animated Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent animate-gradient-slow"></div>
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-400 via-blue-500 to-green-400 animate-gradient-slow"></div>
       </div>
       
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-15 transition-opacity duration-1000"
+        className="absolute inset-0 bg-cover bg-center opacity-10 transition-opacity duration-1000"
         style={{ backgroundImage: `url(${heroBanner})` }}
       />
       
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge with Government Style */}
-          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-6 py-3 rounded-full mb-6 shadow-lg border border-accent/20 animate-fade-in-left">
-            <Icon className="w-6 h-6 text-accent animate-pulse-glow" />
-            <span className="text-sm sm:text-base font-bold text-foreground">
-              🇮🇳 बस्ती, यू.पी. में आपका डिजिटल सेवा पार्टनर
-            </span>
+          {/* Government Logos Badge */}
+          <div className="inline-flex items-center gap-4 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl mb-6 shadow-2xl border-2 border-orange-400 animate-fade-in-left">
+            <img src={cscLogo} alt="CSC" className="h-12 w-12 object-contain animate-pulse-glow" />
+            <img src={digitalIndiaLogo} alt="Digital India" className="h-12 w-12 object-contain animate-pulse-glow" />
+            <div className="text-left">
+              <p className="text-sm sm:text-base font-bold text-orange-600">
+                🇮🇳 Common Service Centre
+              </p>
+              <p className="text-xs text-blue-600 font-semibold">Digital India Initiative</p>
+            </div>
           </div>
 
           {/* Main Content with Enhanced Animation */}
@@ -81,17 +93,18 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-2xl">
               {slides[currentSlide].title}
             </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white/95 mb-6 drop-shadow-lg">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-yellow-300 mb-6 drop-shadow-lg">
               {slides[currentSlide].subtitle}
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-white mb-8 max-w-3xl mx-auto drop-shadow-md leading-relaxed">
               {slides[currentSlide].description}
             </p>
             
-            {/* Service Provider Name */}
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-xl mb-6 border border-white/30">
-              <span className="text-white/90 text-sm">संचालक:</span>
-              <span className="text-white font-bold text-base sm:text-lg">Mr. Pankaj Chaudhary</span>
+            {/* Service Provider Info */}
+            <div className="inline-flex flex-col gap-2 bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl mb-6 border-2 border-orange-400 shadow-2xl">
+              <span className="text-orange-600 text-sm font-bold">सेवा प्रदाता</span>
+              <span className="text-blue-700 font-bold text-lg sm:text-xl">Pankaj Chaudhary</span>
+              <span className="text-green-600 text-xs font-semibold">S.P. Chaudhary Digital Service Center</span>
             </div>
           </div>
 
@@ -100,18 +113,17 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
             <Button 
               onClick={onBookingClick}
               size="lg"
-              className="btn-accent w-full sm:w-auto text-base sm:text-lg px-8 py-6 shadow-xl hover:shadow-2xl"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-6 bg-orange-600 hover:bg-orange-700 text-white shadow-xl hover:shadow-2xl border-2 border-white"
             >
-              अभी शुरू करें - बुकिंग करें
+              अभी सेवा बुक करें
             </Button>
             <Button 
               onClick={() => {
                 const element = document.getElementById("services");
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
-              variant="outline"
               size="lg"
-              className="w-full sm:w-auto text-base sm:text-lg px-8 py-6 bg-white hover:bg-white/90 text-primary border-white"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-6 bg-white hover:bg-gray-100 text-blue-700 border-2 border-white shadow-xl"
             >
               सभी सेवाएँ देखें
             </Button>
