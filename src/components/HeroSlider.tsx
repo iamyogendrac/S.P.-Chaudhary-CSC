@@ -87,20 +87,20 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Government Logos Badge */}
           <div className="inline-flex items-center gap-4 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl mb-6 shadow-2xl border-2 border-orange-400 animate-fade-in-left">
-            <img src={cscLogo} alt="CSC Common Service Centre" className="h-16 w-auto object-contain animate-pulse-glow" />
-            <img src={digitalIndiaLogo} alt="CSC Digital India" className="h-16 w-auto object-contain animate-pulse-glow" />
+            <img src={cscLogo} alt="CSC Common Service Centre" width="114" height="64" className="h-16 w-auto object-contain animate-pulse-glow" />
+            <img src={digitalIndiaLogo} alt="CSC Digital India" width="94" height="64" className="h-16 w-auto object-contain animate-pulse-glow" />
           </div>
 
           {/* Bank Logos Strip */}
           <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-6 py-3 rounded-2xl mb-6 shadow-xl border border-blue-300">
-            <img src={bankLogos} alt="SBI, BOB, PNB, Aadhaar Enabled" className="h-12 w-auto object-contain" />
+            <img src={bankLogos} alt="SBI, BOB, PNB, Aadhaar Enabled" width="120" height="48" className="h-12 w-auto object-contain" />
           </div>
 
           {/* Main Content with Enhanced Animation */}
           <div className="animate-scale-in" key={currentSlide}>
             {currentSlide === 4 && (
               <div className="mb-6 flex justify-center">
-                <img src={mantraDevice} alt="Mantra AEPS Device" className="h-32 w-auto object-contain rounded-lg shadow-2xl border-4 border-white/30" />
+                <img src={mantraDevice} alt="Mantra AEPS Device" width="128" height="128" className="h-32 w-auto object-contain rounded-lg shadow-2xl border-4 border-white/30" />
               </div>
             )}
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-2xl">
@@ -117,7 +117,9 @@ const HeroSlider = ({ onBookingClick }: HeroSliderProps) => {
             <div className="inline-flex items-center gap-4 bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl mb-6 border-2 border-orange-400 shadow-2xl">
               <img 
                 src={sanchalakImage} 
-                alt="Pankaj Chaudhary - संचालक" 
+                alt="Pankaj Chaudhary - संचालक"
+                width="80"
+                height="80"
                 className="h-20 w-20 rounded-full object-cover border-4 border-orange-500 shadow-lg"
               />
               <div className="text-left">

@@ -26,8 +26,8 @@ const Header = ({ onBookingClick }: HeaderProps) => {
           {/* Logo and Brand */}
           <div className="flex items-center gap-3 sm:gap-4">
             <div className="flex items-center gap-2">
-              <img src={cscLogo} alt="CSC Logo" className="h-12 w-12 object-contain" />
-              <img src={digitalIndiaLogo} alt="Digital India" className="h-12 w-12 object-contain hidden sm:block" />
+              <img src={cscLogo} alt="CSC Logo" width="48" height="48" className="h-12 w-12 object-contain" />
+              <img src={digitalIndiaLogo} alt="Digital India" width="48" height="48" className="h-12 w-12 object-contain hidden sm:block" />
             </div>
             <div>
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary leading-tight">

@@ -27,7 +27,9 @@ const AepsSection = ({ onBookingClick }: AepsSectionProps) => {
                 <div className="flex justify-center mb-6">
                   <img 
                     src={mantraDevice} 
-                    alt="Mantra Biometric Device" 
+                    alt="Mantra Biometric Device"
+                    width="256"
+                    height="256"
                     className="w-64 h-64 object-contain animate-float"
                   />
                 </div>
