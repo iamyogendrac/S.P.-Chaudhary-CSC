@@ -28,7 +28,7 @@ const highlights = [
   {
     icon: Clock,
     title: "त्वरित सेवा",
-    description: "सोम - शनि: सुबह 9:00 से शाम 7:00 बजे तक। रविवार बंद। आपकी सुविधा के लिए लंबे समय तक खुला।",
+    description: "सोमवार से रविवार: सुबह 9:00 से शाम 7:00 बजे तक। बिना किसी बंद दिन के। आपकी सुविधा के लिए हर दिन खुला।",
     color: "text-primary-light",
     bgColor: "bg-primary/10",
     borderColor: "border-primary-light",
