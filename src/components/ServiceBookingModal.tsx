@@ -56,7 +56,7 @@ const ServiceBookingModal = ({ isOpen, onClose, serviceName = "सामान�
 ━━━━━━━━━━━━━━━━`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/918557449403?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/918957449403?text=${encodedMessage}`;
 
     // Open WhatsApp
     window.open(whatsappUrl, "_blank");

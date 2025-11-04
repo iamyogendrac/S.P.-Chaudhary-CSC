@@ -16,13 +16,13 @@ interface ContactModalProps {
 const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/918557449403?text=नमस्ते,%20मुझे%20आपकी%20डिजिटल%20सेवाओं%20के%20बारे%20में%20जानकारी%20चाहिए।",
+      "https://wa.me/918957449403?text=नमस्ते,%20मुझे%20आपकी%20डिजिटल%20सेवाओं%20के%20बारे%20में%20जानकारी%20चाहिए।",
       "_blank"
     );
   };
 
   const handleCallClick = () => {
-    window.location.href = "tel:8557449403";
+    window.location.href = "tel:8957449403";
   };
 
   return (
@@ -53,7 +53,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
             className="btn-primary w-full py-6 text-lg"
           >
             <Phone className="w-5 h-5 mr-3" />
-            अभी कॉल करें: 8557449403
+            अभी कॉल करें: 8957449403
           </Button>
 
           <div className="border-t pt-6 space-y-4">
@@ -67,7 +67,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                 <p className="font-semibold text-sm">पता</p>
                 <p className="text-sm text-muted-foreground">
                   Near State Bank of India<br />
-                  Chilma Bazar, Basti, UP - 272001
+                  Chilma Bazar, Basti, UP - 272301
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
               <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
               <div>
                 <p className="font-semibold text-sm">मोबाइल</p>
-                <p className="text-sm text-muted-foreground">+91 8557449403</p>
+                <p className="text-sm text-muted-foreground">+91 8957449403</p>
                 <p className="text-xs text-muted-foreground mt-1">Mr. Pankaj Chaudhary</p>
               </div>
             </div>

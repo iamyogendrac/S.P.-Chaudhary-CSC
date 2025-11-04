@@ -44,7 +44,7 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                 </div>
                 <div className="bg-card rounded-xl p-6 shadow-lg border-l-4 border-secondary">
                   <Heart className="w-10 h-10 text-secondary mb-3" />
-                  <h4 className="font-bold text-xl text-card-foreground mb-2">10+ वर्ष</h4>
+                  <h4 className="font-bold text-xl text-card-foreground mb-2">2 वर्ष</h4>
                   <p className="text-muted-foreground">सेवा का अनुभव</p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                       <p className="text-muted-foreground">
                         Near State Bank of India<br />
                         Chilma Bazar, Basti<br />
-                        Uttar Pradesh - 272001
+                        Uttar Pradesh - 272301
                       </p>
                     </div>
                   </div>
@@ -78,10 +78,10 @@ const AboutSection = ({ onBookingClick }: AboutSectionProps) => {
                     <div>
                       <p className="font-semibold text-card-foreground mb-1">फोन नंबर</p>
                       <a 
-                        href="tel:8557449403" 
+                        href="tel:8957449403" 
                         className="text-lg font-bold text-accent hover:text-accent-light transition-colors"
                       >
-                        +91 8557449403
+                        +91 8957449403
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">Mr. Pankaj Chaudhary</p>
                     </div>

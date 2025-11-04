@@ -91,16 +91,16 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
                   Near State Bank of India<br />
-                  Chilma Bazar, Basti, UP - 272001
+                  Chilma Bazar, Basti, UP - 272301
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
                 <a 
-                  href="tel:8557449403"
+                  href="tel:8957449403"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  +91 8557449403
+                  +91 8957449403
                 </a>
               </li>
               <li className="flex items-start gap-2">
